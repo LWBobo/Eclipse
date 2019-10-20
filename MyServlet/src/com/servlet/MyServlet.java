@@ -13,6 +13,6 @@ public class MyServlet extends HttpServlet{
 			throws ServletException, IOException {
 		
 		resp.getWriter().write("this is my first servlet.");
-		System.out.println("this is my first servlet.");
+		System.out.println("this is my first servlet..");
 	}
 }

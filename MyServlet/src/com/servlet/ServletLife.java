@@ -16,7 +16,7 @@ public class ServletLife extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@Override
 		protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		resp.getWriter().write("this is  servletlife.");
-		System.out.println("this is servletlife.");
+		resp.getWriter().write("****servletlife.");
+		System.out.println("servletlife****.");
 		}
 }
