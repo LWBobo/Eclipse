@@ -1,0 +1,124 @@
+20-Oct-2019 14:55:47.257 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:     Apache Tomcat/9.0.27
+20-Oct-2019 14:55:47.262 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:            Oct 7 2019 09:57:22 UTC
+20-Oct-2019 14:55:47.263 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.27.0
+20-Oct-2019 14:55:47.263 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Oct-2019 14:55:47.263 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:               10.0
+20-Oct-2019 14:55:47.263 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:                  amd64
+20-Oct-2019 14:55:47.263 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:         C:\Program Files\Java\jdk-11.0.2
+20-Oct-2019 14:55:47.264 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:              11.0.2+9-LTS
+20-Oct-2019 14:55:47.264 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+20-Oct-2019 14:55:47.264 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27
+20-Oct-2019 14:55:47.264 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27
+20-Oct-2019 14:55:47.272 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Oct-2019 14:55:47.273 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Oct-2019 14:55:47.273 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Oct-2019 14:55:47.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\conf\logging.properties
+20-Oct-2019 14:55:47.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Oct-2019 14:55:47.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Oct-2019 14:55:47.275 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Oct-2019 14:55:47.275 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Oct-2019 14:55:47.275 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27
+20-Oct-2019 14:55:47.276 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27
+20-Oct-2019 14:55:47.276 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\temp
+20-Oct-2019 14:55:47.277 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+20-Oct-2019 14:55:47.277 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20-Oct-2019 14:55:47.277 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20-Oct-2019 14:55:47.282 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+20-Oct-2019 14:55:47.507 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+20-Oct-2019 14:55:47.615 严重 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 初始化组件[Connector[HTTP/1.1-8080]]失败。
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:575)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+20-Oct-2019 14:55:47.619 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+20-Oct-2019 14:55:47.622 严重 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 初始化组件[Connector[AJP/1.3-8009]]失败。
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:575)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+20-Oct-2019 14:55:47.626 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[623]毫秒内初始化
+20-Oct-2019 14:55:47.665 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Oct-2019 14:55:47.665 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.27]
+20-Oct-2019 14:55:47.673 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\docs]
+20-Oct-2019 14:55:47.981 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\docs] has finished in [308] ms
+20-Oct-2019 14:55:47.981 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\examples]
+20-Oct-2019 14:55:48.290 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\examples] has finished in [309] ms
+20-Oct-2019 14:55:48.290 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\host-manager]
+20-Oct-2019 14:55:48.320 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\host-manager] has finished in [29] ms
+20-Oct-2019 14:55:48.320 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\manager]
+20-Oct-2019 14:55:48.344 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\manager] has finished in [24] ms
+20-Oct-2019 14:55:48.345 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\ROOT]
+20-Oct-2019 14:55:48.366 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [G:\www\git\Eclipse\MyServlet\apache-tomcat\apache-tomcat-9.0.27\webapps\ROOT] has finished in [20] ms
+20-Oct-2019 14:55:48.370 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [743] milliseconds
+20-Oct-2019 14:55:48.380 严重 [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+20-Oct-2019 14:55:48.381 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Oct-2019 14:55:48.382 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+20-Oct-2019 14:55:48.382 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+20-Oct-2019 14:55:48.398 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Oct-2019 14:55:48.399 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+20-Oct-2019 14:55:48.400 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+20-Oct-2019 14:55:48.401 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]
