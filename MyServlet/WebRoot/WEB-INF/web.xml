@@ -16,12 +16,4 @@
     <servlet-name>my2</servlet-name>
     <url-pattern>/my2</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <servlet-name>method</servlet-name>
-    <servlet-class>com.servlet.ServletMethod</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>method</servlet-name>
-    <url-pattern>/method</url-pattern>
-  </servlet-mapping>
 </web-app>
