@@ -2,3 +2,6 @@
 /factory/
 /towayadapter/
 /facade/
+/command/
+/observer/
+/strategy/
