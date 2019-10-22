@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.logintest.pojo.User;
+import com.logintest.service.LoginService;
+import com.logintest.service.impl.LoginServiceImpl;
+
 /**
  * Servlet implementation class LoginServlet
  */
@@ -21,6 +25,13 @@ public class LoginServlet extends HttpServlet {
 			String uname = req.getParameter("uname");
 			String pwd = req.getParameter("pwd");
 			System.out.println(uname +":" + pwd);
+			
+			LoginService ls = new LoginServiceImpl();
+			User u = ls.checkLoginService(uname, pwd);
+			if(null != u) {
+				resp.getWriter().write("login successuflly");
+				resp.getWriter().write(uname +":" + pwd);
+			}
 			
 			
 		}
