@@ -3,6 +3,7 @@ package com.logintest.dao;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -130,6 +131,15 @@ public class JDBCutil {
 		try {
 			if(conn != null) {
 				conn.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void close(PreparedStatement ps){
+		try {
+			if(ps != null) {
+				ps.close();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

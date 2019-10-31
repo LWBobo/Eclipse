@@ -27,7 +27,7 @@ public class PageServlet extends HttpServlet {
 			resp.getWriter().write("<head>");
 			resp.getWriter().write("</head>");
 			resp.getWriter().write("<body>");
-			resp.getWriter().write("<font color='red' size='20px'>"+str+"</font>");
+			resp.getWriter().write("<font color='red' size='18px'>"+str+"</font>");
 			resp.getWriter().write("<form action='login' method='get'>");
 			resp.getWriter().write("用户名:<input type='text' name='uname' value=''/><br/>");
 			resp.getWriter().write("密码:<input type='password' name='pwd' value=''/><br/>");

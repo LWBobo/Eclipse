@@ -16,6 +16,13 @@ public class LoginServiceImpl implements LoginService{
 		return ld.checkLoginDao(uname, pwd);
 	}
 
+	
+	//校验Cookie信息
+	@Override
+	public User checkUidService(String uid) {
+		return ld.checkUidDao(uid);
+	}
+
 
 
 }
