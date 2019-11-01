@@ -1,7 +1,11 @@
-/adapter/
+/facade/
 /factory/
 /towayadapter/
+<<<<<<< HEAD
+=======
 /facade/
 /command/
 /observer/
 /strategy/
+>>>>>>> 9549d5cdfc4cbc4452a316b10b3cb7e610c397ed
+/Multiton/

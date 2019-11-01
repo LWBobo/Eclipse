@@ -18,7 +18,7 @@ public class Test {
 		ArrayList<Student> stuarr =null;
 		ArrayList<Teacher> tea = null;
 		stuarr = DbRead.readstuinfo();
-		tea = DbRead.readteacherinfo();
+		tea = DbRead.readteacherinfo(); 
 		new LogIn(tea,stuarr);
 //		new MainFrame(7, tea, stuarr);
 //		new ChangeStuInfo(stuarr);
