@@ -1,0 +1,6 @@
+package = command
+SystemExitFunc = ExitCommand
+DisplayHelpFunc = HelpCommand
+
+
+functionname = SystemExitFunc
