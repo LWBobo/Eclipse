@@ -1,4 +1,4 @@
-package com.logintest;
+package src.com.logintest;
 
 import java.io.IOException;
 
@@ -22,7 +22,7 @@ public class CookieServlet extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		 	req.setCharacterEncoding("utf-8");
-		 	resp.setContentType("text/html;charset=utf-8");
+		 	resp.setContentType("text/html;charset=utf-8"); 
 		 	
 		 	Cookie []cks = req.getCookies();
 		 	if(null != cks) {

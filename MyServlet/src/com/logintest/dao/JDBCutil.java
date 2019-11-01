@@ -1,4 +1,4 @@
-package com.logintest.dao;
+package src.com.logintest.dao;
 
 import java.io.IOException;
 import java.sql.Connection;
