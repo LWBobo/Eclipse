@@ -27,7 +27,7 @@ public class MyFrame extends JFrame{
 	Zidingyi zi;
 	JRadioButtonMenuItem jr1=new JRadioButtonMenuItem("初级",true);
 	JRadioButtonMenuItem jr2=new JRadioButtonMenuItem("中级");
-	JRadioButtonMenuItem jr3=new JRadioButtonMenuItem("高级");
+	JRadioButtonMenuItem jr3=new JRadioButtonMenuItem("高级"); 
 	JLabel jt9=new JLabel("得分：0" );
 	static JLabel jt10=new JLabel("等级：1" );
 	JMenu m1=new JMenu("游戏");
