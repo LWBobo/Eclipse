@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginPage extends HttpServlet {
 		@Override
 		protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-			resp.setContentType("text/heml;charset=utf-8");
+			resp.setContentType("text/html;charset=utf-8");
 			req.setCharacterEncoding("utf-8");
 			
 			resp.getWriter().write("第一个登录程序");

@@ -1,4 +1,4 @@
-package src.com.logintest;
+package com.logintest;
 
 import java.io.IOException;
 
