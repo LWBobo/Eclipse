@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 package = command
 SystemExitFunc = ExitCommand
 DisplayHelpFunc = HelpCommand
 
 
+=======
+package = command
+SystemExitFunc = ExitCommand
+DisplayHelpFunc = HelpCommand
+
+
+>>>>>>> b2c7c1c9e0994fd66f5ab7e715f7a9639147ae52
 functionname = SystemExitFunc
