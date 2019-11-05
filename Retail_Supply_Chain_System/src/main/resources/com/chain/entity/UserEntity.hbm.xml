@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.chain.entity">
+    <class name="UserEntity" table="tb_chain_user">
+        <id name="userId" column="USER_ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="username">
+            <column name="USER_NAME" not-null="true"/>
+        </property>
+        <property name="password">
+            <column name="USER_PASSWORD" not-null="true"/>
+        </property>
+        <property name="name">
+            <column name="REAL_NAME" not-null="true"/>
+        </property>
+        <property name="sex">
+            <column name="USER_SEX" not-null="true"/>
+        </property>
+        <property name="age">
+            <column name="USER_AGE" not-null="false"/>
+        </property>
+        <property name="joinedDate">
+            <column name="USER_JOINED_DATE" not-null="true"/>
+        </property>
+        <property name="admin">
+            <column name="USER_IS_ADMIN" not-null="false"/>
+        </property>
+        <property name="avatar">
+            <column name="AVATAR_PATH" not-null="false"/>
+        </property>
+        <property name="department">
+            <column name="DEPARTMENT" not-null="false"/>
+        </property>
+
+        <set name="saleEntities" inverse="true">
+            <key column="user_id" />
+            <one-to-many class="com.chain.entity.SaleEntity"/>
+        </set>
+
+        <property name="createdBy">
+            <column name="CREATED_BY" not-null="true"/>
+        </property>
+        <property name="createdTs">
+            <column name="CREATED_TS" not-null="true"/>
+        </property>
+        <property name="updatedBy">
+            <column name="UPDATED_BY" not-null="true"/>
+        </property>
+        <property name="updatedTs">
+            <column name="UPDATED_TS" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.chain.entity">
+    <class name="StockEntity" table="tb_chain_stock">
+
+        <id name="id" column="COO_ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="product">
+            <column name="product" not-null="true"/>
+        </property>
+        <property name="quantity">
+            <column name="quantity" not-null="true"/>
+        </property>
+        <property name="place">
+            <column name="place" not-null="true"/>
+        </property>
+         <property name="danger">
+            <column name="danger" not-null="true"/>
+        </property>
+        <property name="status">
+            <column name="status" not-null="false"/>
+        </property>
+
+        <property name="createdBy">
+            <column name="CREATED_BY" not-null="true"/>
+        </property>
+        <property name="createdTs">
+            <column name="CREATED_TS" not-null="true"/>
+        </property>
+        <property name="updatedBy">
+            <column name="UPDATED_BY" not-null="true"/>
+        </property>
+        <property name="updatedTs">
+            <column name="UPDATED_TS" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

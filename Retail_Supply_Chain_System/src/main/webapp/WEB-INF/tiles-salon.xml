@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       
+<tiles-definitions>  
+
+    <!-- common tiles -->
+    <definition name="index" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/index.jsp" />
+    </definition>
+    
+    <definition name="user_list" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/hr/list.jsp" />
+    </definition>
+
+    <definition name="user_add" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/hr/add.jsp" />
+    </definition>
+
+    <definition name="user_update" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/hr/update.jsp" />
+    </definition>
+
+    <definition name="coo_list" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/cooperation/list.jsp" />
+    </definition>
+
+    <definition name="coo_add" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/cooperation/add.jsp" />
+    </definition>
+
+    <definition name="coo_update" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/cooperation/update.jsp" />
+    </definition>
+
+    <definition name="purchase_list" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/purchase/list.jsp" />
+    </definition>
+
+    <definition name="purchase_add" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/purchase/add.jsp" />
+    </definition>
+
+    <definition name="purchase_update" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/purchase/update.jsp" />
+    </definition>
+
+    <definition name="purchase_details" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/purchase/detail.jsp" />
+    </definition>
+
+    <definition name="stock_list" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/stock/list.jsp" />
+    </definition>
+
+    <definition name="stock_add" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/stock/add.jsp" />
+    </definition>
+
+    <definition name="stock_update" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/stock/update.jsp" />
+    </definition>
+
+    <definition name="stock_details" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/stock/detail.jsp" />
+    </definition>
+
+    <definition name="sale_list" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/sale/list.jsp" />
+    </definition>
+
+    <definition name="sale_add" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/sale/add.jsp" />
+    </definition>
+
+    <definition name="account_list" template="/layout/base.jsp">
+        <put-attribute name="body" value="/pages/account/list.jsp" />
+    </definition>
+    
+</tiles-definitions>  
+    

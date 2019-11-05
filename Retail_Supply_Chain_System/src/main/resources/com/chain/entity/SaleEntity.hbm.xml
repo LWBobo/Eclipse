@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.chain.entity">
+    <class name="SaleEntity" table="tb_chain_sale">
+
+        <id name="id" column="SALE_ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="quantity">
+            <column name="QUANTITY" not-null="true"/>
+        </property>
+        <property name="amount">
+            <column name="AMOUNT" not-null="true"/>
+        </property>
+
+        <many-to-one name="stockEntity" class="com.chain.entity.StockEntity"
+                     column="stock_id" lazy="false"/>
+
+        <many-to-one name="userEntity" class="com.chain.entity.UserEntity"
+                     column="user_id" lazy="false"/>
+
+        <property name="createdBy">
+            <column name="CREATED_BY" not-null="true"/>
+        </property>
+        <property name="createdTs">
+            <column name="CREATED_TS" not-null="true"/>
+        </property>
+        <property name="updatedBy">
+            <column name="UPDATED_BY" not-null="true"/>
+        </property>
+        <property name="updatedTs">
+            <column name="UPDATED_TS" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

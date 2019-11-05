@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.chain.entity">
+    <class name="CooperationEntity" table="tb_chain_cooperation">
+
+        <id name="id" column="COO_ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="name">
+            <column name="NAME" not-null="true"/>
+        </property>
+        <property name="personInCharge">
+            <column name="PERSON_IN_CHARGE" not-null="true"/>
+        </property>
+        <property name="address">
+            <column name="ADDRESS" not-null="true"/>
+        </property>
+        <property name="telephone">
+            <column name="TELEPHONE" not-null="false"/>
+        </property>
+
+        <property name="createdBy">
+            <column name="CREATED_BY" not-null="true"/>
+        </property>
+        <property name="createdTs">
+            <column name="CREATED_TS" not-null="true"/>
+        </property>
+        <property name="updatedBy">
+            <column name="UPDATED_BY" not-null="true"/>
+        </property>
+        <property name="updatedTs">
+            <column name="UPDATED_TS" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

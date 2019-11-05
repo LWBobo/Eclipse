@@ -22,7 +22,7 @@ public class CookieServlet extends HttpServlet {
 				Cookie c =  new Cookie("mouse", "logie");
 				Cookie c2 = new Cookie("key","cherry");
 				c2.setMaxAge(3600*24*3);
-				c2.setPath("/Cookie/gc");
+				c2.setPath("/cookie/gc");
 				
 				
 				

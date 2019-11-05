@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.custom.i18n.resources" value="messages"/>
+    <constant name="struts.ui.theme" value="simple"/>
+
+    <package name="common" namespace="/common" extends="struts-default">
+
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+        </result-types>
+
+        <interceptors>
+            <interceptor-stack name="crudStack">
+                <interceptor-ref name="store">
+                    <param name="operationMode">AUTOMATIC</param>
+                </interceptor-ref>
+                <interceptor-ref name="paramsPrepareParamsStack" />
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="crudStack" />
+
+        <global-results>
+            <result>/pages/index.jsp</result>
+        </global-results>
+
+        <action name="index" class="com.chain.action.ConsoleAction" method="index">
+            <result name="success" type="tiles">index</result>
+        </action>
+
+        <action name="login" class="com.chain.action.ConsoleAction" method="login">
+            <result name="success">/pages/login.jsp</result>
+        </action>
+
+        <action name="logon" class="com.chain.action.ConsoleAction" method="logon">
+            <result name="success" type="redirect">index.action</result>
+            <result name="input">/pages/login.jsp</result>
+        </action>
+
+        <action name="logout" class="com.chain.action.ConsoleAction" method="logout">
+            <result name="success">/pages/login.jsp</result>
+        </action>
+
+        <action name="userList" class="com.chain.action.UserAction" method="list">
+            <result name="success" type="tiles">user_list</result>
+        </action>
+
+        <action name="addUser" class="com.chain.action.UserAction" method="add">
+            <result name="success" type="tiles">user_add</result>
+        </action>
+
+        <action name="updateUser" class="com.chain.action.UserAction" method="update">
+            <result name="success" type="tiles">user_update</result>
+        </action>
+
+        <action name="saveUser" class="com.chain.action.UserAction" method="save">
+            <result name="success" type="redirectAction">userList</result>
+            <result name="input" type="tiles">user_add</result>
+        </action>
+
+        <action name="deleteUser" class="com.chain.action.UserAction" method="delete">
+            <result name="success" type="redirectAction">userList</result>
+        </action>
+
+        <action name="cooList" class="com.chain.action.CooperationAction" method="list">
+            <result name="success" type="tiles">coo_list</result>
+        </action>
+
+        <action name="addCoo" class="com.chain.action.CooperationAction" method="add">
+            <result name="success" type="tiles">coo_add</result>
+        </action>
+
+        <action name="updateCoo" class="com.chain.action.CooperationAction" method="update">
+            <result name="success" type="tiles">coo_update</result>
+        </action>
+
+        <action name="saveCoo" class="com.chain.action.CooperationAction" method="save">
+            <result name="success" type="redirectAction">cooList</result>
+            <result name="input" type="tiles">coo_add</result>
+        </action>
+
+        <action name="deleteCoo" class="com.chain.action.CooperationAction" method="delete">
+            <result name="success" type="redirectAction">cooList</result>
+        </action>
+
+        <action name="purchaseList" class="com.chain.action.PurchaseAction" method="list">
+            <result name="success" type="tiles">purchase_list</result>
+        </action>
+
+        <action name="addPurchase" class="com.chain.action.PurchaseAction" method="add">
+            <result name="success" type="tiles">purchase_add</result>
+        </action>
+
+        <action name="updatePurchase" class="com.chain.action.PurchaseAction" method="update">
+            <result name="success" type="tiles">purchase_update</result>
+        </action>
+
+        <action name="detailPurchase" class="com.chain.action.PurchaseAction" method="update">
+            <result name="success" type="tiles">purchase_details</result>
+        </action>
+
+        <action name="savePurchase" class="com.chain.action.PurchaseAction" method="save">
+            <result name="success" type="redirectAction">purchaseList</result>
+            <result name="input" type="tiles">purchase_add</result>
+        </action>
+
+        <action name="deletePurchase" class="com.chain.action.PurchaseAction" method="delete">
+            <result name="success" type="redirectAction">purchaseList</result>
+        </action>
+
+        <action name="stockList" class="com.chain.action.StockAction" method="list">
+            <result name="success" type="tiles">stock_list</result>
+        </action>
+
+        <action name="addStock" class="com.chain.action.StockAction" method="add">
+            <result name="success" type="tiles">stock_add</result>
+        </action>
+
+        <action name="updateStock" class="com.chain.action.StockAction" method="update">
+            <result name="success" type="tiles">stock_update</result>
+        </action>
+
+        <action name="detailStock" class="com.chain.action.StockAction" method="update">
+            <result name="success" type="tiles">stock_details</result>
+        </action>
+
+        <action name="saveStock" class="com.chain.action.StockAction" method="save">
+            <result name="success" type="redirectAction">stockList</result>
+            <result name="input" type="tiles">stock_add</result>
+        </action>
+
+        <action name="saleList" class="com.chain.action.SaleAction" method="list">
+            <result name="success" type="tiles">sale_list</result>
+        </action>
+
+        <action name="addSale" class="com.chain.action.SaleAction" method="add">
+            <result name="success" type="tiles">sale_add</result>
+        </action>
+
+        <action name="saveSale" class="com.chain.action.SaleAction" method="save">
+            <result name="success" type="redirectAction">saleList</result>
+            <result name="input" type="tiles">sale_add</result>
+        </action>
+
+        <action name="accountList" class="com.chain.action.AccountAction" method="show">
+            <result name="success" type="tiles">account_list</result>
+        </action>
+
+    </package>
+
+</struts>
