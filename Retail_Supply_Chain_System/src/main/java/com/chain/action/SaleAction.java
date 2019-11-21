@@ -77,7 +77,6 @@ public class SaleAction extends ActionSupport implements Preparable {
         return SUCCESS;
     }
 
-    @Override
     public void prepare() throws Exception {
         userEntityList = userService.list();
         stockEntityList = stockService.list();

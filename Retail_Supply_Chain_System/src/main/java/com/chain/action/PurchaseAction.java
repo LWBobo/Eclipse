@@ -144,7 +144,6 @@ public class PurchaseAction extends ActionSupport implements Preparable {
         this.cooperationEntityList = cooperationEntityList;
     }
 
-    @Override
     public void prepare() throws Exception {
         userEntityList = userService.list();
         cooperationEntityList = cooperationService.list();

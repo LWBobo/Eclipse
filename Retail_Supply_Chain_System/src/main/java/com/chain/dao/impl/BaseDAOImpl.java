@@ -24,7 +24,6 @@ public class BaseDAOImpl<T> extends HibernateDaoSupport implements BaseDAO<T> {
         super.setSessionFactory(sessionFactory);
     }
 
-    @Override
     public void add(T t) {
         try {
             super.getHibernateTemplate().persist(t);
@@ -34,7 +33,6 @@ public class BaseDAOImpl<T> extends HibernateDaoSupport implements BaseDAO<T> {
         }
     }
 
-    @Override
     public void delete(T t) {
         try {
             super.getHibernateTemplate().delete(t);
@@ -44,7 +42,6 @@ public class BaseDAOImpl<T> extends HibernateDaoSupport implements BaseDAO<T> {
         }
     }
 
-    @Override
     public void update(T t) {
         try {
             super.getHibernateTemplate().update(t);
@@ -54,7 +51,6 @@ public class BaseDAOImpl<T> extends HibernateDaoSupport implements BaseDAO<T> {
         }
     }
 
-    @Override
     public List<T> list(Class<T> clazz) {
         try {
             return super.getHibernateTemplate().loadAll(clazz);
@@ -64,7 +60,7 @@ public class BaseDAOImpl<T> extends HibernateDaoSupport implements BaseDAO<T> {
         }
     }
 
-    @Override
+    
     public T get(Class<T> clazz, Serializable id) {
         try {
             return super.getHibernateTemplate().get(clazz, id);
@@ -74,7 +70,7 @@ public class BaseDAOImpl<T> extends HibernateDaoSupport implements BaseDAO<T> {
         }
     }
 
-    @Override
+     
     public List<T> get(String hql, Object[] objects) {
         try {
             return super.getHibernateTemplate().find(hql, objects);
@@ -84,7 +80,7 @@ public class BaseDAOImpl<T> extends HibernateDaoSupport implements BaseDAO<T> {
         }
     }
 
-    @Override
+     
     public PaginationBean<T> pagedList(final Class<T> clazz, final PaginationBean<T> paginationBean) {
         return (PaginationBean<T>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException {
